@@ -1,0 +1,234 @@
+html {
+    display: flex;
+    justify-content: center;
+    font-family: "Anton", sans-serif;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    max-width: 1345px;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    /*border: 1px black solid;*/
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 30%;
+    /*border: 1px black solid;*/
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navigation div {
+    display: block;
+}
+
+.text-navigation {
+    display: none;
+}
+
+h1 {
+    margin-left: -20%;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    /*color: black;*/
+}
+
+.vektors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*border: 1px red solid;*/
+    width: 15%;
+}
+
+.box {
+    box-sizing: content-box;
+    width: 70%;
+    height: 70%;
+}
+
+.body-containers {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    /*  border: 1px blue solid;  */
+}
+
+.start-conteiner {
+    display: none;
+    /*border: 1px blue solid;*/
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    background: #F1F2F4;
+}
+
+.block-first {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    /*border: 1px red solid;*/
+}
+
+.all-category-start-conteiner {
+    display: flex;
+    flex-direction: row;
+    /*border: 1px greenyellow solid;*/
+    padding: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    width: 310px;
+}
+
+.all-category-start-conteiner p {
+    margin: 1%;
+}
+
+.denim {
+    margin-left: 5%;
+    width: 75%;
+    height: 30%;
+    line-height: 125%;
+    font-weight: bold;
+    font-size: 32px;
+    /*border: 1px rgb(15, 15, 15) solid;*/
+}
+
+.block-second {
+    width: 350px;
+    height: 250px;
+    /*border: 1px red solid;*/
+    background-image: url("../images/want.png"), url("../images/line1.png"), url("../images/line3.png");
+    background-repeat: no-repeat;
+    background-position: center, bottom left, top right;
+    background-size: 294px 260px, 178px 135px, 232px 176px;
+}
+
+.filter {
+    margin: 2%;
+    float: right;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 243px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.end-conteiner {
+    width: 100%;
+    max-width: 1366px;
+    /*  border: 1px black solid;  */
+}
+
+.blocks-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1366px;
+    /* border:2px brown dashed;  */
+}
+
+.images {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+}
+
+.piccat {
+    width: 150%;
+    height: 150%;
+    max-width: 243px;
+    max-height: 270px;
+}
+
+.images div {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.class-button li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.Showing {
+    padding: 2%;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.more {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    background: #151C22;
+    padding: 2%;
+    max-width: 200px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("../fonts/WorkSans-Medium.eot");
+    src: url("../fonts/WorkSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@media (min-width: 85.3rem) {
+    html {
+        width: 84.06em;
+    }
+}
+
+@media (max-width: 85.3rem) {
+    html {
+        width: 48em;
+    }
+}
+
+@media (min-width: 48rem) {
+    .start-conteiner {
+        display: block;
+    }
+    .navigation div {
+        display: none;
+    }
+    .text-navigation {
+        display: block;
+    }
+}
+
+@media (max-width: 20rem) {
+    html {
+        width: 20rem;
+    }
+}
