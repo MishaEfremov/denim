@@ -7,14 +7,14 @@ html {
 body {
     font-family: "Oswald", sans-serif;
     width: 100%;
-    max-width: 1345px;
+    max-width: 84.06em;
 }
 
 .conteiner {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1366px;
+    max-width: 85.3rem;
     margin: 0 auto;
     /*border: 1px black solid;*/
 }
@@ -31,7 +31,7 @@ body {
 .navigation a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -46,8 +46,8 @@ body {
 h1 {
     margin-left: -20%;
     font-weight: 800;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5em;
+    line-height: 1.75em;
     /*color: black;*/
 }
 
@@ -67,7 +67,7 @@ h1 {
 
 .body-containers {
     width: 100%;
-    max-width: 1366px;
+    max-width: 85.3em;
     margin: 0 auto;
     /*  border: 1px blue solid;  */
 }
@@ -86,7 +86,7 @@ h1 {
 .block-first {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 21.8em;
     /*border: 1px red solid;*/
 }
 
@@ -94,11 +94,11 @@ h1 {
     display: flex;
     flex-direction: row;
     /*border: 1px greenyellow solid;*/
-    padding: 20px;
+    padding: 1.25em;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    width: 310px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    width: 19.3em;
 }
 
 .all-category-start-conteiner p {
@@ -111,18 +111,18 @@ h1 {
     height: 30%;
     line-height: 125%;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2em;
     /*border: 1px rgb(15, 15, 15) solid;*/
 }
 
 .block-second {
-    width: 350px;
-    height: 250px;
+    width: 21.8em;
+    height: 15.6em;
     /*border: 1px red solid;*/
     background-image: url("../images/want.png"), url("../images/line1.png"), url("../images/line3.png");
     background-repeat: no-repeat;
     background-position: center, bottom left, top right;
-    background-size: 294px 260px, 178px 135px, 232px 176px;
+    background-size: 18.3em 16.25em, 11.1em 8.4em, 14.5em 11em;
 }
 
 .filter {
@@ -130,46 +130,46 @@ h1 {
     float: right;
     box-sizing: border-box;
     width: 100%;
-    max-width: 243px;
-    height: 50px;
+    max-width: 15.1em;
+    height: 3/1em;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 .end-conteiner {
     width: 100%;
-    max-width: 1366px;
+    max-width: 85.3em;
     /*  border: 1px black solid;  */
 }
 
-.blocks-images {
-    display: flex;
-    justify-content: center;
+.grid {
+    margin-left: 5%;
+    margin-right: 5%;
     width: 100%;
-    max-width: 1366px;
-    /* border:2px brown dashed;  */
+    max-width: 85.3em;
+    display: grid;
+    grid-template-areas: "a b c d" " f m e e  " " g h e e ";
+    grid-template-columns: 18.75em 18.75em 18.75em 18.75em;
+    grid-template-rows: 25em 25em 25em ;
+}
+.grid figure{
+    margin: 1.4em 1.4em;
+}
+#e{
+    grid-area: 2 / 3 / span 2 / span 2;
 }
 
-.images {
-    width: 100%;
-    max-width: 1366px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* border: 1px solid black; */
-    justify-content: space-around;
+#img {
+    height: 23.1em;
+}
+
+#img-big {
+    height: 43.3em;
 }
 
 .piccat {
-    width: 150%;
-    height: 150%;
-    max-width: 243px;
-    max-height: 270px;
-}
-
-.images div {
-    margin-left: 1%;
-    margin-right: 1%;
+    width: 12.4em;
+    height: 16.8em;
 }
 
 .class-button li {
@@ -182,18 +182,18 @@ h1 {
 .Showing {
     padding: 2%;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .more {
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1em;
+    line-height: 1.3em;
     color: white;
     background: #151C22;
     padding: 2%;
-    max-width: 200px;
+    max-width: 12.5em;
     width: 100%;
 }
 
@@ -207,11 +207,27 @@ h1 {
     html {
         width: 84.06em;
     }
+    .piccat {
+        width: 15.1em;
+        height: 16.8em;
+    }
+    .piccat-big {
+        width: 34.5em;
+        height: 41.8em;
+    }
 }
 
 @media (max-width: 85.3rem) {
     html {
         width: 48em;
+    }
+    .piccat {
+        width: 12.8em;
+        height: 15em;
+    }
+    .piccat-big {
+        width: 27.6em;
+        height: 38.8em;
     }
 }
 
@@ -227,8 +243,18 @@ h1 {
     }
 }
 
+@media (max-width: 48rem) {}
+
 @media (max-width: 20rem) {
     html {
         width: 20rem;
+    }
+    .piccat {
+        width: 8.1em;
+        height: 10em;
+    }
+    .piccat-big {
+        width: 18.1em;
+        height: 27.6em;
     }
 }
